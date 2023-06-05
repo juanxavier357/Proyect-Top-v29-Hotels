@@ -40,11 +40,6 @@ const router = createBrowserRouter([
         // loader: loaderProduct,
       },
       {
-        path: "signup",
-        element: <SignUp />,
-        // loader: loaderProduct,
-      },
-      {
         path: "booking-success",
         element: <BookingSuccess />
         // loader: loaderProduct,
