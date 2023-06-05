@@ -1,0 +1,26 @@
+  .list__locations {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px;
+    gap: 15px;
+  }
+
+  @media screen and (max-width: 375px) {
+    .list__locations {
+      margin: 0;
+
+      .hide {
+        display: none;
+      }
+    }
+
+    h2 {
+      font-size: 15px;
+    }
+
+    p {
+      font-size: 13px;
+      color: grey;
+    }
+  }

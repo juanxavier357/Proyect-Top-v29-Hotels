@@ -1,0 +1,182 @@
+.content__blog {
+  background-color: aquamarine;
+
+  &--description {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    img {
+      width: 75px;
+    }
+  }
+
+  &--attribute {
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+
+    img {
+      margin-top: 20px;
+    }
+  }
+
+  &--published {
+    padding: 10px;
+
+    &-article {
+      border: 2px outset rgba(192, 192, 192, 0.2);
+    }
+
+    img {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    h4 {
+      color: red;
+    }
+
+    button {
+      color: white;
+      font-weight: bold;
+      border: 0;
+      background-color: red;
+    }
+  }
+
+  &--newsletter {
+    padding: 0 15px 15px 15px;
+  }
+
+  &--newsletter p {
+    color: gray;
+  }
+
+  &--newsletter button {
+    padding: 10px;
+    border-radius: 7px;
+  }
+
+  &--subscribe {
+    text-align: center;
+
+    p,
+    h4 {
+      color: grey;
+    }
+  }
+
+  &--email {
+    width: 90%;
+    margin: 0 auto;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    border: 2px outset rgba(192, 192, 192, 0.2);
+
+    h4 {
+      margin: 10px 0;
+    }
+
+    button {
+      border-radius: 30px;
+      width: 100px;
+    }
+  }
+
+  &--show {
+    display: none;
+  }
+
+}
+
+@media Screen and (min-width: 500px) {
+  .content__blog {
+    &--published {
+
+      &-article {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto;
+
+        img {
+          width: 240px;
+        }
+      }
+    }
+
+    &--show {
+      display: none;
+    }
+
+    &--attribute {
+      width: 200px;
+    }
+  }
+}
+
+@media Screen and (min-width: 670px) {
+  .content__blog {
+
+    &--subscribe {
+      padding: 20px 0 10px 0;
+      display: flex;
+      gap: 15px;
+    }
+
+    &--email {
+      align-items: center;
+
+      button {
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media Screen and (min-width: 1030px) {
+  .content__blog {
+    &--published {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+
+      &-article {
+        display: flex;
+        width: 480px;
+      }
+    }
+
+    &--news,
+    &--email {
+      padding: 0 30px;
+    }
+
+  }
+}
+
+@media Screen and (min-width: 1350px) {
+  .content__blog {
+    &--description {
+      width: 80vw;
+      margin: 0 auto;
+      padding: 20px 0 40px 0;
+    }
+
+    &--published {
+      width: 80vw;
+      margin: 0 auto;
+
+      &-article {
+        width: 530px;
+      }
+    }
+
+  }
+}
