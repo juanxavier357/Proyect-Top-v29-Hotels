@@ -2,13 +2,13 @@ import { createBrowserRouter } from "react-router-dom";
 import Root from "../layout/Root";
 import Home from "../pages/Home";
 import Checkout from "../pages/checkoutPage/Checkout"
-import HotelList from "../pages/HotelList/HotelList"
-import HotelSingle from "../pages/HotelSingle/HotelSingle"
+import HotelList from "../pages/hotelList/HotelList"
+import HotelSingle from "../pages/hotelSingle/HotelSingle"
 import SignUp from "../pages/SignUp"
 import BookingSuccess from "../pages/BookingSuccess"
 import UserDashboard from "../pages/UserDashboard"
 import BookingSummary from "../pages/bookinSummaryPage/BookingSummaryPage";
-import NotFound from "../pages/NotFound/NotFound"
+import NotFound from "../pages/notFound/NotFound"
 const router = createBrowserRouter([
   {
     path: "/",
